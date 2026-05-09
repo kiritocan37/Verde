@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verde Microgreen — Freshly Harvested Microgreens in Tbilisi</title>
+  <meta name="description" content="Fresh, locally grown microgreens delivered to your door in Tbilisi. Healthy food every day.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/hero.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">🌱 Verde</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#products" data-i18n="nav_products">Products</a></li>
+      <li><a href="#benefits" data-i18n="nav_benefits">Benefits</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      <li>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('ka')">GE</button>
+          <button class="lang-btn" onclick="setLang('ru')">RU</button>
+        </div>
+      </li>
+      <li><a href="https://instagram.com/verdemicrogreen" target="_blank" class="nav-cta" data-i18n="nav_order">Order Now</a></li>
+    </ul>
+    <button class="mobile-toggle" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobile()"></div>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="toggleMobile()">✕</button>
+  <a href="#about" onclick="toggleMobile()" data-i18n="nav_about">About</a>
+  <a href="#products" onclick="toggleMobile()" data-i18n="nav_products">Products</a>
+  <a href="#benefits" onclick="toggleMobile()" data-i18n="nav_benefits">Benefits</a>
+  <a href="#contact" onclick="toggleMobile()" data-i18n="nav_contact">Contact</a>
+  <div class="lang-switcher" style="padding:16px 0">
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('ka')">GE</button>
+    <button class="lang-btn" onclick="setLang('ru')">RU</button>
+  </div>
+  <a href="https://instagram.com/verdemicrogreen" target="_blank" data-i18n="nav_order">Order Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">🌱 <span data-i18n="hero_badge">Freshly Harvested in Tbilisi</span></div>
+        <h1 data-i18n="hero_title">Nourish Your Life with <em>Microgreens</em></h1>
+        <p class="hero-desc" data-i18n="hero_desc">Locally grown, freshly harvested microgreens packed with vitamins and nutrients. Delivered to your door in Tbilisi — healthy food every day.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary" data-i18n="hero_cta">Explore Products →</a>
+          <a href="#about" class="btn-secondary" data-i18n="hero_cta2">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.png" alt="Fresh microgreens" loading="eager">
+        <div class="hero-floating-card card-1">
+          <div class="floating-stat">30₾</div>
+          <div class="floating-label" data-i18n="float_price">Per container</div>
+        </div>
+        <div class="hero-floating-card card-2">
+          <div class="floating-stat">🚚</div>
+          <div class="floating-label" data-i18n="float_delivery">Free local delivery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item"><div class="stat-number">6+</div><div class="stat-label" data-i18n="stat1">Aromatic Varieties</div></div>
+      <div class="stat-item"><div class="stat-number">30₾</div><div class="stat-label" data-i18n="stat2">Per Container</div></div>
+      <div class="stat-item"><div class="stat-number">3</div><div class="stat-label" data-i18n="stat3">Days Shelf Life</div></div>
+      <div class="stat-item"><div class="stat-number">598+</div><div class="stat-label" data-i18n="stat4">Happy Customers</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-image-wrapper">
+        <div class="about-accent"></div>
+        <img src="images/about.png" alt="Verde Microgreen lifestyle" loading="lazy">
+      </div>
+      <div>
+        <span class="section-tag" data-i18n="about_tag">Our Story</span>
+        <h2 data-i18n="about_title">Grown with Love in the Heart of Tbilisi</h2>
+        <p data-i18n="about_p1">Verde Microgreen is a local Tbilisi-based business dedicated to growing the freshest, most nutritious microgreens. We believe that healthy food should be accessible, delicious, and sustainable.</p>
+        <p data-i18n="about_p2">Our microgreens are harvested fresh daily — packed with up to 40x more nutrients than mature vegetables. From seed to your table in just 3 days.</p>
+        <div class="about-features">
+          <div class="about-feature"><div class="feature-icon">🌱</div><div class="feature-text"><h4 data-i18n="af1_t">100% Natural</h4><p data-i18n="af1_d">No pesticides or chemicals</p></div></div>
+          <div class="about-feature"><div class="feature-icon">📍</div><div class="feature-text"><h4 data-i18n="af2_t">Locally Grown</h4><p data-i18n="af2_d">Right here in Tbilisi</p></div></div>
+          <div class="about-feature"><div class="feature-icon">🚚</div><div class="feature-text"><h4 data-i18n="af3_t">Fast Delivery</h4><p data-i18n="af3_d">Same-day local delivery</p></div></div>
+          <div class="about-feature"><div class="feature-icon">💚</div><div class="feature-text"><h4 data-i18n="af4_t">Nutrient Dense</h4><p data-i18n="af4_d">Up to 40x more vitamins</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="prod_tag">Our Products</span>
+      <h2 data-i18n="prod_title">Bestselling Microgreens</h2>
+      <p data-i18n="prod_desc">Fresh varieties harvested daily. Each container is 30₾ — choose your favorites or try the bundle.</p>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" style="color:var(--green-300)" data-i18n="ben_tag">Why Microgreens?</span>
+      <h2 data-i18n="ben_title">Small Greens, Huge Benefits</h2>
+      <p data-i18n="ben_desc">Microgreens are young vegetable greens packed with concentrated nutrients and flavor.</p>
+    </div>
+    <div class="benefits-grid" id="benefitsGrid"></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="how_tag">How It Works</span>
+      <h2 data-i18n="how_title">From Our Garden to Your Table</h2>
+    </div>
+    <div class="steps-grid" id="stepsGrid"></div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="instagram-feed" id="instagram">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Instagram</span>
+      <h2 data-i18n="insta_title">Follow Our Journey</h2>
+      <p data-i18n="insta_desc">@verdemicrogreen — see our fresh harvests and happy customers</p>
+    </div>
+    <div class="insta-grid">
+      <div class="insta-item"><img src="images/pea.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+      <div class="insta-item"><img src="images/radish.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+      <div class="insta-item"><img src="images/broccoli.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+      <div class="insta-item"><img src="images/sunflower.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+      <div class="insta-item"><img src="images/amaranth.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+      <div class="insta-item"><img src="images/bundle.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+      <div class="insta-item"><img src="images/cress.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+      <div class="insta-item"><img src="images/mizuna.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
+    </div>
+    <div class="insta-follow">
+      <a href="https://instagram.com/verdemicrogreen" target="_blank">📸 <span data-i18n="insta_follow">Follow @verdemicrogreen</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid reveal">
+      <div>
+        <span class="section-tag" data-i18n="contact_tag">Get in Touch</span>
+        <h2 data-i18n="contact_title">Ready to Order?</h2>
+        <p style="color:var(--gray-600);margin-top:12px;font-size:1.05rem" data-i18n="contact_desc">Send us a message on Instagram or TikTok to place your order. We deliver locally in Tbilisi!</p>
+        <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://instagram.com/verdemicrogreen" target="_blank" class="btn-primary">Instagram →</a>
+          <a href="https://tiktok.com/@verdemicrogreen" target="_blank" class="btn-secondary" style="color:var(--gray-800);border-color:var(--gray-300)">TikTok</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-method"><div class="contact-icon">📍</div><div><h4 data-i18n="c_loc_t">Location</h4><p>Tbilisi, Georgia</p></div></div>
+        <div class="contact-method"><div class="contact-icon">📩</div><div><h4 data-i18n="c_order_t">Order</h4><p><a href="https://instagram.com/verdemicrogreen" target="_blank">@verdemicrogreen</a></p></div></div>
+        <div class="contact-method"><div class="contact-icon">🎵</div><div><h4>TikTok</h4><p><a href="https://tiktok.com/@verdemicrogreen" target="_blank">@verdemicrogreen</a></p></div></div>
+        <div class="contact-method"><div class="contact-icon">🚚</div><div><h4 data-i18n="c_del_t">Delivery</h4><p data-i18n="c_del_d">Local delivery across Tbilisi</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>🌱 Verde Microgreen</h3>
+        <p data-i18n="footer_desc">Freshly harvested microgreens in Tbilisi. Healthy food every day, delivered to your door.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/verdemicrogreen" target="_blank" aria-label="Instagram">📸</a>
+          <a href="https://tiktok.com/@verdemicrogreen" target="_blank" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+      <div><h4 data-i18n="f_nav">Navigation</h4><ul>
+        <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#products" data-i18n="nav_products">Products</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul></div>
+      <div><h4 data-i18n="f_prod">Products</h4><ul>
+        <li><a href="#products">Pea Shoots</a></li>
+        <li><a href="#products">Radish</a></li>
+        <li><a href="#products">Broccoli</a></li>
+        <li><a href="#products">Sunflower</a></li>
+      </ul></div>
+      <div><h4 data-i18n="f_social">Social</h4><ul>
+        <li><a href="https://instagram.com/verdemicrogreen" target="_blank">Instagram</a></li>
+        <li><a href="https://tiktok.com/@verdemicrogreen" target="_blank">TikTok</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Verde Microgreen. Tbilisi, Georgia</p></div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
