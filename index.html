@@ -1,233 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verde Microgreen — Freshly Harvested Microgreens in Tbilisi</title>
-  <meta name="description" content="Fresh, locally grown microgreens delivered to your door in Tbilisi. Healthy food every day.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="images/hero.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdemicrogreen - Premium Living Microgreens</title>
+    <meta name="description" content="Discover the most nutrient-dense living microgreens grown with care. Harvested daily for maximum flavor and nutrition.">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <a href="#" class="nav-logo">🌱 Verde</a>
-    <ul class="nav-links">
-      <li><a href="#about" data-i18n="nav_about">About</a></li>
-      <li><a href="#products" data-i18n="nav_products">Products</a></li>
-      <li><a href="#benefits" data-i18n="nav_benefits">Benefits</a></li>
-      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-      <li>
-        <div class="lang-switcher">
-          <button class="lang-btn active" onclick="setLang('en')">EN</button>
-          <button class="lang-btn" onclick="setLang('ka')">GE</button>
-          <button class="lang-btn" onclick="setLang('ru')">RU</button>
+    <div id="main-content" class="content-wrapper">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <h1><span class="logo-text">Verdemicrogreen</span></h1>
+                </div>
+                <nav class="main-nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                        <li><a href="#products" class="nav-link" data-section="products">Our Greens</a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">Our Story</a></li>
+                        <li><a href="#benefits" class="nav-link" data-section="benefits">Benefits</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="nav-cta-btn secondary">Find Retailers</button>
+                    <button class="nav-cta-btn primary">Join CSA</button>
+                    <button class="hamburger-menu" id="hamburgerBtn" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-list">
+                <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+                <li><a href="#products" class="mobile-nav-link">Our Greens</a></li>
+                <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
+                <li><a href="#benefits" class="mobile-nav-link">Benefits</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-nav-actions">
+                <button class="mobile-cta-btn secondary">Find Retailers</button>
+                <button class="mobile-cta-btn primary">Join CSA</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-background">
+                <!-- Background image will be set via CSS -->
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Living Food, Vibrant Life</h1>
+                    <p class="hero-subtitle">The most nutrient-dense food on the planet, harvested alive and delivered to your table within hours.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">40x</div>
+                            <div class="stat-label">More Nutrients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Days Alive</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Days Storage</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn-primary">Shop Our Collection</a>
+                        <a href="#about" class="btn-outline">Learn About Our Process</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="photos/gallery-1.jpg" alt="Fresh living microgreens in hand" class="living-greens">
+                </div>
+            </div>
+        </section>
+
+        <!-- What Makes Us Different -->
+        <section class="difference-section" id="difference">
+            <div class="container">
+                <h2 class="section-title">Why Living Microgreens?</h2>
+                <p class="section-subtitle">Most "microgreens" are cut days before you eat them. Ours are delivered alive.</p>
+                <div class="difference-grid">
+                    <div class="difference-card">
+                        <div class="difference-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Harvested Alive</h3>
+                        <p>Unlike cut microgreens that lose nutrients immediately, our living greens continue to grow and gain nutrients until you eat them.</p>
+                    </div>
+                    <div class="difference-card">
+                        <div class="difference-icon">
+                            <i class="fas fa-tint-drop"></i>
+                        </div>
+                        <h3>No Waste</h3>
+                        <p>Harvest only what you need. The rest keeps growing, reducing food waste by up to 90%.</p>
+                    </div>
+                    <div class="difference-card">
+                        <div class="difference-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Maximum Flavor</h3>
+                        <p>Living plants develop more complex flavors. Taste the difference of truly fresh, living food.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Gallery Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Living Collection</h2>
+                    <p class="section-subtitle">Each variety is grown to peak nutritional density and delivered living in its own soil.</p>
+                </div>
+
+                <!-- Product Filters -->
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">All Varieties</button>
+                    <button class="filter-btn" data-filter="spicy">Spicy</button>
+                    <button class="filter-btn" data-filter="mild">Mild</button>
+                    <button class="filter-btn" data-filter="nutty">Nutty</button>
+                    <button class="filter-btn" data-filter="peppery">Peppery</button>
+                    <button class="filter-btn" data-filter="sweet">Sweet</button>
+                    <button class="filter-btn" data-filter="earthy">Earthy</button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="productGrid">
+                    <!-- Product cards will be populated via JavaScript -->
+                </div>
+
+                <!-- CSA / Subscription Info -->
+                <div class="csa-callout">
+                    <div class="container">
+                        <div class="csa-content">
+                            <h3>Join Our Living Foods CSA</h3>
+                            <p>Get a weekly delivery of living microgreens varieties - the easiest way to add living nutrients to every meal.</p>
+                            <div class="csa-benefits">
+                                <div class="benefit">
+                                    <i class="fas fa-check"></i>
+                                    <span>4+ varieties weekly</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-check"></i>
+                                    <span>Delivered living</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-check"></i>
+                                    <span>Skip or cancel anytime</span>
+                                </div>
+                            </div>
+                            <a href="#contact" class="btn-primary">Join CSA Program</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section" id="benefits">
+            <div class="container">
+                <h2 class="section-title">The Science of Living Food</h2>
+                <p class="section-subtitle">Why eating living plants changes everything</p>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Living Enzymes</h3>
+                        <p>Active enzymes that aid digestion and nutrient absorption are only present in living plants.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Hydrating Nutrients</h3>
+                        <p>Water-soluble vitamins (C, B complex) are at peak levels when plants are living and turgid.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Phytonutrient Density</h3>
+                        <p>Living microgreens contain up to 40x more nutrients than their mature counterparts.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Gut Health</h3>
+                        <p>Living plants deliver beneficial microbes and fiber that support microbiome diversity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">Our Mission</h2>
+                        <p class="section-subtitle">To make living, nutrient-dense food accessible to everyone</p>
+                        <p>We believe that the revolution in nutrition isn't about supplements or processed foods—it's about returning to eating food the way nature intended: alive, fresh, and full of vital energy.</p>
+                        <p>Our journey began when we discovered that most "fresh" produce has lost 50-80% of its nutrients within days of harvest. We asked: What if we could deliver food at its nutritional peak?</p>
+                        <p>The answer was living microgreens. By delivering microgreens still growing in their soil, we ensure you get maximum nutrition, flavor, and vitality in every bite.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Varieties Tested</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">365</div>
+                                <div class="stat-label">Days of Growing</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Preservatives Used</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-video">
+                        <div class="video-container">
+                            <!-- Video would go here -->
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Watch our growing process</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How Living Microgreens Work</h2>
+                <p class="section-subtitle">From our farm to your table in under 24 hours</p>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Seed to Sprout</h3>
+                            <p>We plant non-GMO, organic seeds in biodegradable trays with nutrient-rich soil.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Optimal Growth</h3>
+                            <p>Greens grow under full-spectrum LED lights with precise water and nutrient schedules.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Peak Nutrition Harvest</h3>
+                            <p>At 7-10 days, when nutrient density peaks, we prepare your order for delivery.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Delivered Living</h3>
+                            <p>Your living greens arrive in 100% recyclable packaging, ready to harvest at home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Our Community Says</h2>
+                <p class="section-subtitle">Real people experiencing the living food difference</p>
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>"I've been adding these to my smoothies every morning and my energy levels have transformed. Knowing I'm eating living food makes all the difference."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah K.</h4>
+                                    <p>Yoga Instructor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>"My kids actually ask for microgreens now! They love harvesting their own living food right from the tray."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Mike R.</h4>
+                                    <p>Father of Two</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>"As a chef, the flavor intensity of living microgreens is unmatched. They elevate every dish from ordinary to extraordinary."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Chef Elena</h4>
+                                    <p>Restaurant Owner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you!</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Our Farm</h3>
+                                <p>123 Living Foods Lane<br>Garden City, CA 92657</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 123-4567<br>Monday-Friday: 8AM-6PM PST</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>hello@verdemicrogreen.com<br>We respond within 2 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number (Optional)">
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" name="subject" required>
+                                    <option value="">How Can We Help?</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="wholesale">Wholesale Partnership</option>
+                                    <option value="csa">CSA Program</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="press">Press/Media</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h3>Get Living Food Tips</h3>
+                    <p>Weekly insights on maximizing nutrition, recipes, and growing tips</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p class="newsletter-footer">We respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2><span class="footer-logo-text">Verdemicrogreen</span></h2>
+                    <p class="footer-tagline">Living Food, Vibrant Life</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#products">Our Greens</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Growing Guide</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <h3>Follow Our Journey</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Verdemicrogreen. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-      </li>
-      <li><a href="https://instagram.com/verdemicrogreen" target="_blank" class="nav-cta" data-i18n="nav_order">Order Now</a></li>
-    </ul>
-    <button class="mobile-toggle" onclick="toggleMobile()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+    </footer>
 
-<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobile()"></div>
-<div class="mobile-nav" id="mobileNav">
-  <button class="mobile-close" onclick="toggleMobile()">✕</button>
-  <a href="#about" onclick="toggleMobile()" data-i18n="nav_about">About</a>
-  <a href="#products" onclick="toggleMobile()" data-i18n="nav_products">Products</a>
-  <a href="#benefits" onclick="toggleMobile()" data-i18n="nav_benefits">Benefits</a>
-  <a href="#contact" onclick="toggleMobile()" data-i18n="nav_contact">Contact</a>
-  <div class="lang-switcher" style="padding:16px 0">
-    <button class="lang-btn active" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('ka')">GE</button>
-    <button class="lang-btn" onclick="setLang('ru')">RU</button>
-  </div>
-  <a href="https://instagram.com/verdemicrogreen" target="_blank" data-i18n="nav_order">Order Now</a>
-</div>
-
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-text">
-        <div class="hero-badge">🌱 <span data-i18n="hero_badge">Freshly Harvested in Tbilisi</span></div>
-        <h1 data-i18n="hero_title">Nourish Your Life with <em>Microgreens</em></h1>
-        <p class="hero-desc" data-i18n="hero_desc">Locally grown, freshly harvested microgreens packed with vitamins and nutrients. Delivered to your door in Tbilisi — healthy food every day.</p>
-        <div class="hero-actions">
-          <a href="#products" class="btn-primary" data-i18n="hero_cta">Explore Products →</a>
-          <a href="#about" class="btn-secondary" data-i18n="hero_cta2">Learn More</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/hero.png" alt="Fresh microgreens" loading="eager">
-        <div class="hero-floating-card card-1">
-          <div class="floating-stat">30₾</div>
-          <div class="floating-label" data-i18n="float_price">Per container</div>
-        </div>
-        <div class="hero-floating-card card-2">
-          <div class="floating-stat">🚚</div>
-          <div class="floating-label" data-i18n="float_delivery">Free local delivery</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="stats-bar">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item"><div class="stat-number">6+</div><div class="stat-label" data-i18n="stat1">Aromatic Varieties</div></div>
-      <div class="stat-item"><div class="stat-number">30₾</div><div class="stat-label" data-i18n="stat2">Per Container</div></div>
-      <div class="stat-item"><div class="stat-number">3</div><div class="stat-label" data-i18n="stat3">Days Shelf Life</div></div>
-      <div class="stat-item"><div class="stat-number">598+</div><div class="stat-label" data-i18n="stat4">Happy Customers</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-grid reveal">
-      <div class="about-image-wrapper">
-        <div class="about-accent"></div>
-        <img src="images/about.png" alt="Verde Microgreen lifestyle" loading="lazy">
-      </div>
-      <div>
-        <span class="section-tag" data-i18n="about_tag">Our Story</span>
-        <h2 data-i18n="about_title">Grown with Love in the Heart of Tbilisi</h2>
-        <p data-i18n="about_p1">Verde Microgreen is a local Tbilisi-based business dedicated to growing the freshest, most nutritious microgreens. We believe that healthy food should be accessible, delicious, and sustainable.</p>
-        <p data-i18n="about_p2">Our microgreens are harvested fresh daily — packed with up to 40x more nutrients than mature vegetables. From seed to your table in just 3 days.</p>
-        <div class="about-features">
-          <div class="about-feature"><div class="feature-icon">🌱</div><div class="feature-text"><h4 data-i18n="af1_t">100% Natural</h4><p data-i18n="af1_d">No pesticides or chemicals</p></div></div>
-          <div class="about-feature"><div class="feature-icon">📍</div><div class="feature-text"><h4 data-i18n="af2_t">Locally Grown</h4><p data-i18n="af2_d">Right here in Tbilisi</p></div></div>
-          <div class="about-feature"><div class="feature-icon">🚚</div><div class="feature-text"><h4 data-i18n="af3_t">Fast Delivery</h4><p data-i18n="af3_d">Same-day local delivery</p></div></div>
-          <div class="about-feature"><div class="feature-icon">💚</div><div class="feature-text"><h4 data-i18n="af4_t">Nutrient Dense</h4><p data-i18n="af4_d">Up to 40x more vitamins</p></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="products" id="products">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag" data-i18n="prod_tag">Our Products</span>
-      <h2 data-i18n="prod_title">Bestselling Microgreens</h2>
-      <p data-i18n="prod_desc">Fresh varieties harvested daily. Each container is 30₾ — choose your favorites or try the bundle.</p>
-    </div>
-    <div class="products-grid" id="productsGrid"></div>
-  </div>
-</section>
-
-<!-- BENEFITS -->
-<section class="benefits" id="benefits">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag" style="color:var(--green-300)" data-i18n="ben_tag">Why Microgreens?</span>
-      <h2 data-i18n="ben_title">Small Greens, Huge Benefits</h2>
-      <p data-i18n="ben_desc">Microgreens are young vegetable greens packed with concentrated nutrients and flavor.</p>
-    </div>
-    <div class="benefits-grid" id="benefitsGrid"></div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how-it-works">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag" data-i18n="how_tag">How It Works</span>
-      <h2 data-i18n="how_title">From Our Garden to Your Table</h2>
-    </div>
-    <div class="steps-grid" id="stepsGrid"></div>
-  </div>
-</section>
-
-<!-- INSTAGRAM -->
-<section class="instagram-feed" id="instagram">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-tag">Instagram</span>
-      <h2 data-i18n="insta_title">Follow Our Journey</h2>
-      <p data-i18n="insta_desc">@verdemicrogreen — see our fresh harvests and happy customers</p>
-    </div>
-    <div class="insta-grid">
-      <div class="insta-item"><img src="images/pea.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-      <div class="insta-item"><img src="images/radish.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-      <div class="insta-item"><img src="images/broccoli.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-      <div class="insta-item"><img src="images/sunflower.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-      <div class="insta-item"><img src="images/amaranth.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-      <div class="insta-item"><img src="images/bundle.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-      <div class="insta-item"><img src="images/cress.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-      <div class="insta-item"><img src="images/mizuna.png" alt="Microgreens" loading="lazy"><div class="insta-overlay">📷</div></div>
-    </div>
-    <div class="insta-follow">
-      <a href="https://instagram.com/verdemicrogreen" target="_blank">📸 <span data-i18n="insta_follow">Follow @verdemicrogreen</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="contact-grid reveal">
-      <div>
-        <span class="section-tag" data-i18n="contact_tag">Get in Touch</span>
-        <h2 data-i18n="contact_title">Ready to Order?</h2>
-        <p style="color:var(--gray-600);margin-top:12px;font-size:1.05rem" data-i18n="contact_desc">Send us a message on Instagram or TikTok to place your order. We deliver locally in Tbilisi!</p>
-        <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="https://instagram.com/verdemicrogreen" target="_blank" class="btn-primary">Instagram →</a>
-          <a href="https://tiktok.com/@verdemicrogreen" target="_blank" class="btn-secondary" style="color:var(--gray-800);border-color:var(--gray-300)">TikTok</a>
-        </div>
-      </div>
-      <div class="contact-card">
-        <div class="contact-method"><div class="contact-icon">📍</div><div><h4 data-i18n="c_loc_t">Location</h4><p>Tbilisi, Georgia</p></div></div>
-        <div class="contact-method"><div class="contact-icon">📩</div><div><h4 data-i18n="c_order_t">Order</h4><p><a href="https://instagram.com/verdemicrogreen" target="_blank">@verdemicrogreen</a></p></div></div>
-        <div class="contact-method"><div class="contact-icon">🎵</div><div><h4>TikTok</h4><p><a href="https://tiktok.com/@verdemicrogreen" target="_blank">@verdemicrogreen</a></p></div></div>
-        <div class="contact-method"><div class="contact-icon">🚚</div><div><h4 data-i18n="c_del_t">Delivery</h4><p data-i18n="c_del_d">Local delivery across Tbilisi</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>🌱 Verde Microgreen</h3>
-        <p data-i18n="footer_desc">Freshly harvested microgreens in Tbilisi. Healthy food every day, delivered to your door.</p>
-        <div class="footer-social">
-          <a href="https://instagram.com/verdemicrogreen" target="_blank" aria-label="Instagram">📸</a>
-          <a href="https://tiktok.com/@verdemicrogreen" target="_blank" aria-label="TikTok">🎵</a>
-        </div>
-      </div>
-      <div><h4 data-i18n="f_nav">Navigation</h4><ul>
-        <li><a href="#hero" data-i18n="nav_home">Home</a></li>
-        <li><a href="#about" data-i18n="nav_about">About</a></li>
-        <li><a href="#products" data-i18n="nav_products">Products</a></li>
-        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-      </ul></div>
-      <div><h4 data-i18n="f_prod">Products</h4><ul>
-        <li><a href="#products">Pea Shoots</a></li>
-        <li><a href="#products">Radish</a></li>
-        <li><a href="#products">Broccoli</a></li>
-        <li><a href="#products">Sunflower</a></li>
-      </ul></div>
-      <div><h4 data-i18n="f_social">Social</h4><ul>
-        <li><a href="https://instagram.com/verdemicrogreen" target="_blank">Instagram</a></li>
-        <li><a href="https://tiktok.com/@verdemicrogreen" target="_blank">TikTok</a></li>
-      </ul></div>
-    </div>
-    <div class="footer-bottom"><p>© 2026 Verde Microgreen. Tbilisi, Georgia</p></div>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
